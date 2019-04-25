@@ -169,3 +169,51 @@ contenido-anuncio p{
 .contenido-contacto p{
   font-size: 1.8rem;
 }
+
+/*Seccion del blog*/
+.seccion-blog{
+
+  display: flex;
+  justify-content: space-between;
+}
+.seccion-blog .blog{
+  flex-basis: 60%;
+}
+.seccion-blog .testimoniales{
+  flex-basis: calc(40% - 2rem);
+}
+/*Seccion imagen del blog*/
+.entrada-blog{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem; /*Separacion con el siguiente elemento*/
+}
+.entrada-blog:last-of-type{/*Eliminar franja inferior naranja*/
+  margin-bottom: 0;
+}
+
+.entrada-blog .imagen{/*Le damos un tamaño de 40% para reducir la imagen*/
+  flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{/*Aqui separamos la letra un poco de la imagen*/
+  flex-basis: calc(60% - 3rem);
+}
+.texto-entrada a{
+  color: #000000;
+  text-decoration: none;
+}
+.texto-entrada h4{
+  margin: 0;
+  line-height: 1.4;
+}
+.texto-entrada h4::after{/*Pseudo elementos buscar hacer la raya verde*/
+  content: "";
+  display: block;
+  width: 20rem;
+  height: .5rem;
+  background-color: #27FF00;
+  margin-top: 1rem;
+}
+.texto-entrada span{/*Cambiar color en partes del codigo con etiqueta span*/
+  color: #FE6400;
+}

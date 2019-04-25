@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
+    <!--Bienes Raices logotipo, links, y parrafo-->
     <header class="site-header inicio">
         <div class="contenedor contenido">
             <div class="barra">
@@ -27,6 +28,7 @@
         </div><!--Contenedor-->
     </header><!--Header-->
 
+    <!--Seccion mas sobre nosotros-->
     <section class="contenedor seccion contenido">
         <h2 class="fuenteW centrar-texto">Más Sobre Nosotros</h2>
         <div class="icono-nosotros">
@@ -58,6 +60,7 @@
         </div>
     </section>
 
+    <!--casas y depas en venta-->
     <main class="contenedor">
         <h2 class="fuenteW centrar-texto">Casas y Depas En Venta</h2>
         <div class="contenedor-anuncios">
@@ -111,7 +114,7 @@
                     </ul>
                     <a href="#" class="boton boton-naranja d-block">VER PROPIEDAD</a>
                 </div>
-            </div class="anuncio">
+            </div class="anuncio">tes
 
             <div class="anuncio" >
                 <img src="img/anuncio2.jpg" alt="Anuncio casa Alberca">
@@ -143,6 +146,7 @@
         </div>
     </main>
 
+    <!--sitio de contactarse con nosotros-->
     <section class="site-contacto">
       <div class="contenedor contenido-contacto">
           <h2>Encuentra la casa de tus sueños</h2>
@@ -152,37 +156,65 @@
       </div>
     </section>
 
-    <section>
-        <h3>Nuestro Blog</h3>
-        <article>
-            <img src="img/blog1.jpg" alt="Anuncio Terraza">
-            <h4>Terraza en el techo de tu casa</h4>
-            <p>Escrito el: <em>20/10/2019</em> por: <em>Admin</em></p>
-            <p>Consejos para construir una terraza en el
-            techo de tu casa, con los mejores materiales
-            y ahorrando dinero.</p>
-        </article>
+    <!--Blog de la empresa-->
+    <div class="seccion-blog contenedor seccion">
+      <!--con la etiqueta seccion para que nos agregue margen con la seccion anterior-->
 
-        <article>
-            <img src="img/blog2.jpg" alt="Anuncio Terraza">
-            <h4>Guía para la decoración de tu hogar</h4>
-            <p>Escrito el: <em>20/10/2019</em> por: <em>Admin</em></p>
-            <p>Maximiza el espacio en tu hogar con esta guia,
-            aprende a combinar muebles y colores para darle
-            vida a tu espacio.</p>
-        </article>
+        <section class="blog"><!--seccion blog-->
 
-        <h3>Testimoniales</h3>
-        <article>
-            <blockquote>
-              El personal se comportó de una excelente forma,
-              muy buena atencion y a casa que me ofrecieron
-              cumple con todas mis expectativas
-            </blockquote>
-            <p>-Juan De la Torre</p>
-        </artticle>
-    </section>
+            <h3 class="centrar-texto fw-300">Nuestro Blog</h3>
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="img/blog1.jpg" alt="Anuncio Terraza">
+                </div>
 
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Terraza en el techo de tu casa</h4><!--Enlaces en el blog de las casas-->
+                    </a>
+
+                    <p>Escrito el: <span>20/10/2019</span> por: <span>Admin</span></p>
+                    <p>Consejos para construir una terraza en el
+                    techo de tu casa, con los mejores materiales
+                    y ahorrando dinero.</p>
+                </div>
+            </article class="entrada-blog">
+
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="img/blog2.jpg" alt="Anuncio Terraza">
+                </div>
+
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Guía para la decoración de tu hogar</h4><!--Enlaces en el blog de las casas-->
+                    </a>
+
+                    <p>Escrito el: <span>20/10/2019</span> por: <span>Admin</span></p>
+                    <p>Maximiza el espacio en tu hogar con esta guia,
+                    aprende a combinar muebles y colores para darle
+                    vida a tu espacio.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="testimoniales"><!--Testimoniales-->
+
+              <h3 class="centrar-texto fw-300">Testimoniales</h3>
+              <article>
+                  <blockquote>
+                      El personal se comportó de una excelente forma,
+                      muy buena atencion y a casa que me ofrecieron
+                      cumple con todas mis expectativas
+                  </blockquote>
+                  <p>-Juan De la Torre</p>
+              </artticle>
+
+        </section>
+    </div>
+
+    <!--final de la pagina-->
     <footer>
         <nav class="navegacion"> <!--Aplique mis estilos de iluminar los enlaces-->
             <a href="nosotros.html">Nosotros</a>
