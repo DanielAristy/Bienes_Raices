@@ -217,3 +217,6 @@ contenido-anuncio p{
 .texto-entrada span{/*Cambiar color en partes del codigo con etiqueta span*/
   color: #FE6400;
 }
+.testimoniales h3{
+  color: #B9162B;
+}
