@@ -44,6 +44,12 @@ h4{
   display: block!important;
 }
 
+.contenido-centrado{
+  max-width: 800px;/*En este caso el tamaño del texto en la pg anuncio.html para que no
+                    me muestre tan grande el parrafo y me ocupe toda la pantalla y 
+                    demas utilidades de la pagina web como el blog*/
+}
+
 /*Botones*/
 .boton{
   color: #ffffff;
@@ -64,6 +70,12 @@ h4{
 }
 
 /* header*/
+.site-header{/*Esta es para Pagina De Nosotros*/
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+
+}
+
 .site-header.inicio{
   background: url(../img/header.jpg);/*Imagen de fondo inicio pagina*/
   background-position: center center;
@@ -120,6 +132,10 @@ h4{
   padding: 0;/*lleva todos los icono a margen con la letra*/
   display: flex;
   justify-content: space-evenly;
+  max-width: 500px;/*Comprimir para el caso de anuncio.html para que ocupe todo el espacios
+                    disponible*/
+  flex: 1;/*Para solucionar en pg anuncio.hmtl, sirve para que los iconos crescan porqu
+            se comprimen, o se muestran asi entonces es una solucion*/
 }
 .icono-img li{
   /*flex: 1;*/
@@ -133,11 +149,23 @@ h4{
 .contenedor-anuncios{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;/*Esta Propiedad hace que no me muestre los anuncios seguidos
+                    sino que haga que me los separe, comentar esta linea para ver
+                    el cambio*/
 }
 .anuncio{
+  flex-grow: 0;/*Aumentar el tamaño de las cajas de anucios*/
+  flex-shrink: 0;/*Esto sirve para que nos se encojan los anuncios
+                  porque cada vez que ingrese un nuevo anucncio se va 
+                  a ir agregando como una lista y se van a encoger todos*/
   flex-basis: calc(33.3% - 1rem);
+/*Todo lo anterior se puede resumir a:
+flex: 1 0 calc(33.3% - 1rem); */
+
   border: 0.1rem solid #B5B5B5;
   background-color: #F5F5F5;
+  margin-bottom: 2rem;/*Separacion entre los anuncios arriba y abajo*/
+
 }
 .contenido-anuncio{/*separa el espacio de los bordes*/
   padding: 2rem;
@@ -188,7 +216,7 @@ contenido-anuncio p{
 .entrada-blog{
   display: flex;
   justify-content: space-between;
-DEs /*Separacion con el siguiente elemento*/
+ /*Separacion con el siguiente elemento*/
 }
 .entrada-blog:last-of-type{/*Eliminar franja inferior naranja*/
   margin-bottom: 0;
@@ -247,4 +275,47 @@ DEs /*Separacion con el siguiente elemento*/
   position: relative;
   padding-left: 5rem;/*Posicional todo el elemento del texto hacia la izquierda*/
   font-weight: 300;/*Cambiar el tamaño de la letra para que sea un poco mas delgada*/
+}
+
+/*Seccion final-footer*/
+.final-pg{
+  background-color: #333333;
+  margin: 0;
+
+}
+
+.contenedor-final{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright{
+  margin: 0;
+  color: #ffffff;
+}
+
+/*INTERNAS*/
+
+/*Nosotros*/
+.contenido-nosotros{
+  display: grid; /*En esta parte se define por el numero de columnas o div
+                  que hallan en la clase padre*/
+  grid-template-columns: repeat(2, 1fr);/*se reparten entre dos columnas de 50%*/
+  grid-column-gap: 2rem;/*Separacion entre las dos columnas*/
+}
+
+.contenido-nosotros blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;/*En este caso para que no tenga margen y se ajuste al texto
+            comentar esta linea para ver lo que pasa*/
+  padding: 1rem 0 3rem 0;/*Espacio del texto en la columna*/
+}
+
+/*Anuncio*/
+.resumen-propiedad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;/*Alinear verticalmente*/
 }
