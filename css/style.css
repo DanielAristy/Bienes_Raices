@@ -217,6 +217,7 @@ contenido-anuncio p{
   display: flex;
   justify-content: space-between;
  /*Separacion con el siguiente elemento*/
+  margin-bottom: 2rem;
 }
 .entrada-blog:last-of-type{/*Eliminar franja inferior naranja*/
   margin-bottom: 0;
@@ -236,7 +237,7 @@ contenido-anuncio p{
   margin: 0;
   line-height: 1.4;
 }
-.texto-entrada h4::after{/*Pseudo elementos despies despues de buscar hacer la raya verde
+.texto-entrada h4::after{/*Pseudo elementos despues despues de buscar hacer la raya verde
                           y no se pueden seleccionar desde la pagina*/
   content: "";
   display: block;
@@ -319,3 +320,9 @@ contenido-anuncio p{
   justify-content: space-between;
   align-items: center;/*Alinear verticalmente*/
 }
+
+/*Contacto*/
+label{
+  display: block; /*Para que tomen todo el espacio disponible*/
+}
+
