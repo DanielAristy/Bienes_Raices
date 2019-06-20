@@ -60,6 +60,10 @@ h4{
   margin-top: 3rem;
   display: inline-block;
   text-align: center;
+  border: none;
+}
+.boton:hover{
+  cursor: pointer;/*Para cuando el curso se localice encima de una link cambie su estilo a una mano*/ 
 }
 .boton-naranja{
   background-color: #E08709;
@@ -322,7 +326,47 @@ contenido-anuncio p{
 }
 
 /*Contacto*/
+.contacto p{
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  margin: 2rem 0 0 0;/*Agrupar en la parte del contacto*/
+}
+legend{
+  font-size: 2rem;/*Tamano de la letra en general*/
+  color: #4f4f4f;/*Color de legend un poco mas claro de lo que estaba*/
+}
 label{
+  font-weight: 700;/*El grueso de las lineas*/
+  text-transform: uppercase;/*Manejo de mayusculas*/
   display: block; /*Para que tomen todo el espacio disponible*/
 }
 
+input:not([type="submit"]), /*En este caso no queria que se afectara el submit*/
+textarea,
+select
+{
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+input[type="radio"]{
+  width: auto;/*Esto significa que tome el ancho que requiera
+                para los botones circulares*/
+  margin: 0;
+}
+
+textarea{
+   height: 20rem;
+}
+
+.forma-contacto{
+  max-width:30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

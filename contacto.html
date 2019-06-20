@@ -34,7 +34,7 @@
 
         <h2 class="fuenteW centrar-texto">Llena el Formulario de Contacto</h2>
 
-        <form action="">
+        <form action="" class="contacto">
 
             <!--Sirve para agrupar campos que esten relacionados-->
             <fieldset>
@@ -82,13 +82,16 @@
 
             <p>Como desea ser Contactado:</p>
 
-            <label for="telefono">Telefono</label>
-            <input type="radio" name="contacto" value="telefono" id="telefono">
+            <div class="forma-contacto">
 
-            <!--Cuando nombramos name="contacto" es posible seleccionar algunas de las dos opciones-->
+                <label for="telefono">Telefono</label>
+                <input type="radio" name="contacto" value="telefono" id="telefono">
 
-            <label for="correo">E-mail</label>
-            <input type="radio" name="contacto" value="correo" id="correo">
+                <!--Cuando nombramos name="contacto" es posible seleccionar algunas de las dos opciones-->
+                <label for="correo">E-mail</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+
+          </div>
 
             <!--Mulitples optiones con type="checkbox" 
             <input type="checkbox" name="orden" value="hamburguesa"> Hamburguesa
@@ -102,11 +105,9 @@
             <label for="hora">Hora:</label>
             <input type="time" id="hora">
 
-
-
           </fieldset>
 
-            <input type="submit">
+            <input type="submit" name="Enviar" class="boton boton-verde">
 
         </form>
     </main>
