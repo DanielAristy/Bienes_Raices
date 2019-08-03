@@ -362,12 +362,15 @@ contenido-anuncio p{
 /*INTERNAS*/
 
 /*Nosotros*/
-.contenido-nosotros{
-  display: grid; /*En esta parte se define por el numero de columnas o div
-                  que hallan en la clase padre*/
-  grid-template-columns: repeat(2, 1fr);/*se reparten entre dos columnas de 50%*/
-  grid-column-gap: 2rem;/*Separacion entre las dos columnas*/
+@media (min-width: 768px) {
+  .contenido-nosotros{
+    display: grid; /*En esta parte se define por el numero de columnas o div
+                    que hallan en la clase padre*/
+    grid-template-columns: repeat(2, 1fr);/*se reparten entre dos columnas de 50%*/
+    grid-column-gap: 2rem;/*Separacion entre las dos columnas*/
+  }
 }
+
 
 .contenido-nosotros blockquote{
   font-weight: 900;
