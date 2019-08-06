@@ -146,6 +146,26 @@ h4{
 .navegacion a:hover{/*Que se vea los enlaces de colores*/
   color: #27D8D0;
 }
+.mobile-menu img {
+  width: 5rem;
+}
+@media (min-width: 768px) {
+  .mobile-menu{
+    display: none     
+  }
+}
+.navegacion{/*En este caso se utiliza para que no se vean los iconos solo si
+              utilizan el icono de menu*/
+  display: none
+}
+.navegacion:target{/*Cuando damos click en las barras nos muestra los demas links*/
+  display: block
+}
+@media (min-width: 768px) {
+  .navegacion{
+    display: block
+  }
+}
 /*Iconos nosotros*/
 @media (min-width: 768px) {
   .icono-nosotros{/*Acomoda los iconos de mas sobre nosotros*/
